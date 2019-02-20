@@ -1,0 +1,103 @@
+<!--https://codepen.io/naikus/pen/BzkoLL-->
+<!--https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+<html>
+    <head>
+        <link rel="stylesheet" href="dashboard.css">
+        <link rel="stylesheet" href="custom-gauges.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="menu-icon">
+             <i class="fas fa-bars header__menu"></i>
+           </div>
+            
+           <header class="header">
+             <!-- <div class="header__search">Search...</div> -->
+             <!-- <div class="header__avatar">Your face</div> -->
+             <img src="resources/logo.svg" alt="logo SpaceX" id="spacexlogo">
+           </header>
+         
+           <aside class="sidenav">
+             <div class="sidenav__close-icon">
+               <i class="fas fa-times sidenav__brand-close"></i>
+             </div>
+             <ul class="sidenav__list">
+               <li class="sidenav__list-item">Dashboard</li>
+               <li class="sidenav__list-item">About the mission</li>
+               <!-- <li class="sidenav__list-item">Item Three</li> -->
+               <!-- <li class="sidenav__list-item">Item Four</li> -->
+               <!-- <li class="sidenav__list-item">Item Five</li> -->
+             </ul>
+           </aside>
+         
+           <main class="main">
+             <div class="main-header">
+                <iframe id="space_header" src="space_header.html"></iframe>
+             </div>
+         
+             <div class="main-overview">
+               <div class="overviewcard">
+                  <div id="gauge2" class="gauge-container two">
+                    <span class="label">Temperature</span>
+                  </div>
+                  <div id="gauge-pressure" class="gauge-container two">
+                    <span class="label">Pressure</span>
+                  </div>
+               </div>
+               <div class="overviewcard">
+                  <div id="gauge6" class="gauge-container six">
+                    <span class="label">Fuel</span>
+                    <span class="value-text">TLS</span>
+                  </div>
+                  <div id="gauge-energy" class="gauge-container six">
+                    <span class="label">Energy</span>
+                    <span class="value-text">kwh</span>
+                  </div>
+               </div>
+               <div class="overviewcard">
+                  <div id="gauge1" class="gauge-container">
+                      <span class="label">CPU</span>
+                  </div>
+                  
+                  <div id="gauge3" class="gauge-container three">
+                      <span class="label">Memory</span>
+                  </div>
+                  
+               </div>
+             </div>
+         
+             <div class="main-cards">
+               <div class="card">
+                  <div id="gauge4" class="gauge-container four">
+                      <span class="label">Speed</span>
+                      <span class="value-text">km/hr</span>
+                  </div>
+                    
+               </div>
+               <div class="card">
+                  <div id="gauge5" class="gauge-container five">
+                      <span class="label">Radiation</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <div id="gauge7" class="gauge-container seven">
+                      <span class="label">ETA Mars</span>
+                  </div>
+               </div>
+             </div>
+           </main>
+         
+           <!-- <footer class="footer">
+             <div class="footer__copyright">&copy; 2018 MTH</div>
+             <div class="footer__signature">Made with love by pure genius</div>
+           </footer> -->
+         </div>
+         <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+         <script src="dashboard.js"></script>
+         <script src="gauge.js"></script>
+         <script src="custom-gauges.js"></script>
+    </body>
+</html>
